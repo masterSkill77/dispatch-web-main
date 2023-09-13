@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    margin: unset;
+    padding: unset;
+    /* background-color: rebeccapurple; */
+}
+* {
+    box-sizing: border-box;
+    max-width: unset;
+}
+#root {    
+    max-width: unset;
+    margin: 0 auto;
+    padding: unset;
+    text-align: center;
+    background-color: #ebebeb;
+    min-height: 100vh;
+    width: 100vw;
+    /* overflow-y: auto !important; */
+}
+.div-places,
+.div-form-places {
+    height: max-content;
+    padding: 10px;
+    width: 40%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+.div-form-places {
+    width: 95%;
+    left: 2.5%;
+    top: 5.2%;
+    height: 45px;
+}
+.map-con {
+    position: relative !important;
+}
+.line {
+    position: relative;
+}
+.line::after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: -10px;
+    background-color: rgba(255, 68, 0, 0.541);
+    width: 2px;
+    height: 20px;
+}
+.icon {
+    background-color: rgba(255, 68, 0, 0.541);
+    box-shadow: 0 0 0 30px rgba(255, 68, 0, 0.336),
+                0 0 0 20px rgba(255, 68, 0, 0.219),;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
